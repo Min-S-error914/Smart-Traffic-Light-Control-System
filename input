@@ -1,0 +1,8 @@
+Adaptive Traffic Light Simulator
+--------------------------------
+Enter number of cycles to simulate (e.g., 3): 1
+Choose input mode: 1) Manual densities  2) Random densities
+Enter 1 or 2: 1
+Run in real-time (sleep between phases)? 1=Yes 0=No (choose 0 for fast output): 0
+Enter NS (North-South) traffic density (non-negative integer): 80
+Enter EW (East-West) traffic density (non-negative integer): 20
