@@ -1,0 +1,19 @@
+High-level idea
+
+At each cycle the controller reads traffic densities (either from sensors or from user input in this simulation).
+
+It computes green durations for NS and EW proportionally:
+
+green_duration = min_green + round((density / total_density) * (max_green - min_green))
+
+Yellow and all-red times are fixed for safety.
+
+The controller alternates green between NS and EW every cycle.
+
+Design decisions & assumptions
+
+Densities are positive integers representing vehicle counts or relative weights.
+
+The system ensures a minimum green time (sufficient for pedestrian crossing / safety) and caps maximum green time to prevent starvation.
+
+Yellow and all-red are short fixed durations for safety.
