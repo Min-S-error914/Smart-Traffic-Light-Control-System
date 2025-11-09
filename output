@@ -1,0 +1,17 @@
+Simulating 1 cycles with densities: NS=80  EW=20
+
+=== Cycle 1 ===
+[13:24:10] North-South -> GREEN (will last 38s)
+   (simulated 38s)
+[13:24:10] North-South -> YELLOW (will last 3s)
+   (simulated 3s)
+[13:24:10] North-South -> RED (will last until other gets green)
+   (simulated 1s)
+[13:24:10] East-West -> GREEN (will last 7s)
+   (simulated 7s)
+[13:24:10] East-West -> YELLOW (will last 3s)
+   (simulated 3s)
+[13:24:10] East-West -> RED (will last until other gets green)
+   (simulated 1s)
+
+Simulation finished.
