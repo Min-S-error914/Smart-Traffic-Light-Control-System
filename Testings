@@ -1,0 +1,42 @@
+Sample runs (fast simulation, simulated waits)
+Example 1 — manual densities NS=80 EW=20 (cycles=1):
+Simulating 1 cycles with densities: NS=80  EW=20
+
+=== Cycle 1 ===
+[13:20:41] North-South -> GREEN (will last 38s)
+   (simulated 38s)
+[13:20:41] North-South -> YELLOW (will last 3s)
+   (simulated 3s)
+[13:20:41] North-South -> RED (will last until other gets green)
+   (simulated 1s)
+[13:20:41] East-West -> GREEN (will last 7s)
+   (simulated 7s)
+[13:20:41] East-West -> YELLOW (will last 3s)
+   (simulated 3s)
+[13:20:41] East-West -> RED (will last until other gets green)
+   (simulated 1s)
+
+
+Explanation: NS got most of the extra budget (38s green) while EW got 7s due to lower density.
+
+Example 2 — balanced densities NS=30 EW=30:
+
+Both directions get approximately equal green durations (e.g., 22–23s depending on rounding).
+
+How you can test / extend
+
+Use various density ratios: (0,0), (100,0), (1,99), etc.
+
+Switch realtime to true to see a live-timed simulation.
+
+Add logging to file for analysis.
+
+Replace manual/random density input with input from real sensors or CSV files.
+
+5) Results analysis (for report)
+
+The controller responds to density changes by redistributing green time proportionally.
+
+The min/max bounds preserve safety and fairness.
+
+With extreme density bias, the minority direction still receives at least min_green to avoid starvation.
