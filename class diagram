@@ -1,0 +1,23 @@
++------------------------+
+| IntersectionController |
++------------------------+
+| - TrafficLight ns      |
+| - TrafficLight ew      |
+| - min_green:int        |
+| - max_green:int        |
+| - yellow_time:int      |
+| - all_red_time:int     |
++------------------------+
+| + simulate_with_inputs |
+| + compute_and_set_green|
+| + run_phase            |
++------------------------+
+
++----------------+
+| TrafficLight   |
++----------------+
+| - name:string  |
+| - state:enum   |
+| - green_duration:int|
+| - yellow_duration:int|
++----------------+
