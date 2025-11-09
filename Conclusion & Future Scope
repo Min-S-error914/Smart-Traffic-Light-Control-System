@@ -1,0 +1,29 @@
+Conclusion
+
+Implemented a simple, clear simulation of an adaptive traffic light controller in C++.
+
+Demonstrated how green times can be allocated based on traffic densities while respecting safety bounds.
+
+The simulation is useful for educational purposes and as a starting point for real-world integration.
+
+Future scope (possible improvements)
+
+Use real-time sensor input (e.g., camera counts or loop detectors).
+
+Add pedestrian crossing signal integration and priority.
+
+Implement emergency vehicle preemption: override to give immediate green to incoming emergency direction.
+
+Add queue modeling (simulate vehicles arriving, queue lengths) and measure metrics like average waiting time, throughput.
+
+Use reinforcement learning / model predictive control to optimize overall throughput rather than proportional allocation.
+
+7) References (include in report)
+
+Textbooks / resources you used (if any). For a university submission you can cite:
+
+Traffic control fundamentals: (insert book/article names used)
+
+C++ reference (cppreference.com) for std::chrono and threading usage.
+
+(If you want, I can fetch formal citations or online references and include them properly in References — tell me if you want me to pull exact sources.)
